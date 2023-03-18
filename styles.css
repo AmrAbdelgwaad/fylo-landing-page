@@ -1,0 +1,675 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+
+    /* Primary */
+
+--Very-Dark-Blue: hsl(243, 87%, 12%);
+--Desaturated-Blue: hsl(238, 22%, 44%);
+
+   /* Accent */
+
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+
+   /* Neutral */
+
+--Light-Grayish-Blue: hsl(240, 75%, 98%);
+--Light-Gray: hsl(0, 0%, 75%);
+--white: hsl(0, 0%, 100%);
+
+    /* fonts */
+
+--ff-open-sans: 'Open Sans', sans-serif;
+--ff-raleway: 'Raleway', sans-serif;
+}
+
+body{
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    font-family: var(--ff-open-sans);
+}
+
+/*styling header*/
+
+header{
+    margin: 1.5rem 0 6.125rem;
+}
+
+.header-logo{
+    max-width: 5rem;
+}
+
+nav ul{
+ display: flex;
+}
+
+nav ul li{
+  padding: 0  1.5rem 0;
+}
+
+nav ul li:nth-child(2){
+    margin-left: auto;
+}
+
+nav ul li:nth-child(4){
+    white-space: nowrap;
+}
+
+nav ul li a{
+    font-family: var(--ff-raleway);
+    color:  var(--Very-Dark-Blue);
+    font-size: 0.75rem;
+}
+
+/*end of the header*/
+
+/*styling main section*/
+
+.illustration-1{
+    display: block;
+    margin: 0 auto;
+    max-width: 19rem;
+    margin-bottom: 2.5rem;
+}
+
+h1,
+h2,
+p{
+    text-align: center;
+}
+
+h1{
+    font-family: var(--ff-raleway);
+    color: var(--Very-Dark-Blue);
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem 0;
+}
+
+.main-p{
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 2rem;
+    padding: 0 2rem 0;
+}
+
+input[type=email]{
+ width: 19rem;
+ height: 2.5rem;
+ border: 0.625px solid hsla(243, 87%, 12%, .5);
+ box-shadow: 2px 3px 6px 0px hsla(0, 0%, 0%, 0.16);
+ border-radius: 0.196rem;
+ margin-bottom: 1rem;
+ text-indent: 1.313rem;
+ letter-spacing: 0.025rem;
+ color: var(--Very-Dark-Blue);
+}
+
+input[type=email]::placeholder{
+    text-indent: 1.313rem;
+    font-family: var(--ff-raleway);
+    font-size: 0.75rem;
+    letter-spacing: 0.025rem;
+    color: var(--Light-Gray);
+}
+
+input[type=email]:focus{
+    outline-color:   hsla(343, 84%, 61%, 1);
+}
+
+.get-btn{
+    border: none;
+    width: 19rem;
+    height: 2.5rem;
+    background-color: var(--Bright-Blue);
+    border-radius: 0.196rem;
+    box-shadow: 2px 3px 6px 0px hsla(0, 0%, 0%, 0.16);
+    color: var(--white);
+    font-family: var(--ff-raleway);
+    font-weight: 700;
+    font-size: inherit;
+    cursor: pointer;
+    margin-bottom: 5.625rem;
+}
+
+.get-btn:hover{
+    background-color: hsl(221, 100%, 71%);
+}
+
+/*end of the main section*/
+
+/*styling the first section*/
+
+.fs-flex-group{
+    background-color: hsl(240, 80%, 98%);
+    padding-bottom: 5.119rem;
+}
+
+.curved-background{
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+  
+}
+
+.illustration-2{
+    display: block;
+    margin: 0 auto;
+    max-width: 20rem;
+    margin-bottom: 5.438rem;
+}
+
+.fs-header{
+   color: var(--Very-Dark-Blue);
+   font-family: var(--ff-raleway);
+   font-size: 1rem;
+   margin-bottom: 1.5rem;
+}
+
+.first-section-content p{
+    color: hsl(244, 14%, 43%);
+}
+
+.first-p,
+.second-p{
+    padding: 0 2rem 0;
+}
+
+.second-p{
+    margin: 1rem 0 2.25rem;
+}
+
+.action-btn {
+    color: var(--Moderate-Cyan);
+    border-bottom: 1px solid;
+    padding-bottom: .4rem;
+}
+
+.action-btn:hover{
+    color: hsl(170, 63%, 66%);
+}
+
+.action-btn::after {
+    content: "";
+    display: inline-block;
+    background: url("images/icon-arrow.svg") no-repeat;
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: -.3rem;
+    margin-left: .5rem;
+    text-decoration: underline;
+}
+
+.review-box{
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    max-width: 17.5rem;
+    background-color: var(--white);
+    border-radius: 0.246rem;
+    box-shadow: 0px 0px 8px 4px hsla(0, 0%, 22%, 0.05);
+}
+
+.quote{
+    margin: .59rem 0 0 1.623rem;
+}
+
+.review-box .review-content{
+   color:  var(--Very-Dark-Blue);
+   font-size: 0.625rem;
+   line-height: 1.5;
+   text-align: left;
+   letter-spacing: 0.021rem;
+   padding-left: 1.623rem;
+   padding-right: 0.796rem;
+ 
+}
+
+.ceo-bio{
+    display: flex;
+    gap: 0.469rem;
+    padding-bottom: 1.4rem;
+}
+
+.ceo-image{
+    width: 1.5rem;
+    border-radius: 50%;
+    margin-left: 1.623rem;
+    margin-top: 0.75rem;
+}
+
+.ceo-bio p{
+    text-align: left;
+    color: var(--Very-Dark-Blue);
+    font-size: 0.563rem;
+    font-weight: 700;
+    line-height: 0.766rem;
+    letter-spacing: 0.021rem;
+    margin-top: 0.75rem;
+}
+
+.ceo-bio p span{
+    font-size: 0.375rem;
+    font-weight: 400;
+}
+
+/*end of the first section*/
+
+/*styling the second section*/
+
+.second-section{
+    background-color: var(--Desaturated-Blue);
+}
+
+.second-section h2{
+    padding-top: 3.375rem;
+    padding-bottom: 1rem;
+    color: var(--white);
+    font-family: var(--ff-raleway);
+    font-size: 1.125rem;
+}
+
+.ss-p {
+    color: var(--white);
+    padding: 0 2rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.second-section  input[type=email]{
+    width: 15rem;
+    height: 2rem;
+    box-shadow: 1px 1px 3px 0px hsla(243, 87%, 12%, 0.16);
+    border-radius: 0.092rem;
+    text-indent: .5rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: .5rem;
+   }
+   
+.second-section  input[type=email]::placeholder{
+       text-indent: .5rem;
+       font-family: var(--ff-raleway);
+       font-size: 0.625rem;
+       color: var(--Light-Gray);
+   }
+   
+.second-section input[type=email]:focus{
+       outline-color:   hsla(343, 84%, 61%, 1);
+   }
+   
+.second-section  .start-btn{
+    border: none;
+    width: 15rem;
+    height: 2rem;
+    background-color: var(--Bright-Blue);
+    border-radius: 0.092rem;
+    box-shadow: 2px 3px 6px 0px hsla(0, 0%, 0%, 0.16);
+    color: var(--white);
+    font-family: var(--ff-raleway);
+    font-weight: 700;
+    font-size: .625rem;
+    cursor: pointer;
+    margin-bottom: 4.438rem;
+}
+
+.second-section .start-btn:hover{
+    background-color: hsl(221, 100%, 71%);
+}
+
+/*end of the second section*/
+
+/*styling the footer*/
+
+footer{
+    background-color: var(--Very-Dark-Blue);
+}
+
+footer>*{
+    margin-left: 2.438rem;
+}
+
+.footer-logo{
+  width: 6.563rem;
+  margin-top: 4.063rem;
+  margin-bottom: 2rem;
+}
+
+.phone,
+.email{
+    display: flex;
+    gap: 1rem
+}
+
+.phone-icon{
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+footer p{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+
+.email{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.email-icon{
+    width: 1.25rem;
+    height: 1rem;
+    margin-top: .2rem;
+}
+
+footer li {
+    margin-top: 1rem;
+}
+
+footer li a{
+    color: var(--white);
+    font-size: 1rem;
+ 
+}
+
+footer li a:hover{
+    color: hsl(221, 100%, 71%);
+}
+
+.col-3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.socl-icons{
+    display: flex;
+    justify-content: center;
+    gap: 0.613rem;
+    padding-bottom: 2.625rem;
+    margin-left: 0;
+}
+
+.socl-icons>*{
+    cursor: pointer;
+}
+
+.fa-brands{
+    color: var(--white);
+    border: 1px solid white;
+    display: block;
+    border-radius: 50%; 
+    padding: 0.625rem 0.625rem;
+}
+
+.facebook{
+    padding: 0.625rem  0.75rem;
+}
+
+.fa-brands:hover{
+    color: var(--Desaturated-Blue);
+    border-color:  var(--Desaturated-Blue);
+}
+
+/*end of the footer*/
+
+/*desctop design*/
+
+@media (min-width: 1200px) {
+
+    body{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /*header*/
+
+    header{
+        margin: 4.063rem 5rem 5.375rem;
+    }
+
+    nav ul li{
+        padding: 0  3.563rem 0;
+      }
+
+      .header-logo{
+        max-width: 10.375rem;
+        height: 3.125rem;
+    }
+
+    nav ul li:nth-child(1){
+        padding-left: 0;
+    }
+
+    nav ul li:nth-child(4){
+        padding-right: 0;
+    }
+    nav ul li a{
+        font-size: 1rem;
+
+    }
+
+    /*main-section*/
+    
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .illustration-1{
+        max-width: 40rem;
+        max-height: 29.625rem;
+        margin-right: 5rem; 
+    }
+
+    h1{
+        text-align: left;
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+        margin: 5rem 0 1rem 5rem;
+        padding: 0 2rem 0 0;
+    }
+    
+    .main-p{
+        text-align: left;
+        margin-bottom: 1.563rem;
+        margin-left: 5rem;
+        padding: 0 7rem 0 0;
+    }
+
+    .submit-form{
+        display: flex;
+        gap: 1rem;
+        margin-left: 5rem;
+    }
+
+    input[type=email]{
+        width: 20rem;
+        height: 2.813rem;
+        margin-bottom: 17.75rem;
+       }
+
+    input[type=email]::placeholder{
+    font-size: 0.875rem;   
+    }
+       
+    .get-btn{
+           width: 12.5rem;
+           height: 2.813rem;
+           margin-bottom: 5.625rem;
+       }
+
+       /*first-section*/
+
+      .fs-flex-group{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+      }
+
+      .illustration-2{
+        max-width: 33.875rem;
+        margin-bottom: 10.813rem;
+        margin-right: 5rem;
+    }
+
+    .fs-header{
+        text-align: left;
+        font-size: 2.5rem;
+        margin: 0 0 2.375rem 5rem;
+     }
+     
+     .first-section-content p{
+        color: var(--Very-Dark-Blue);
+        text-align: left;
+        margin-left: 5rem;
+    }
+    
+    .first-p,
+    .second-p{
+        padding: 0;
+        padding-right: 12rem;
+    }
+    
+    .second-p{
+        margin: 1rem 0 1rem 5rem;
+    }
+
+    .review-box{
+        margin: 2.5rem 0 6.688rem 5rem;
+        max-width: 22.25rem;
+    }
+    
+    .quote{
+        margin: .75rem 0 0 2.063rem;
+    }
+    
+    .review-box .review-content{
+       font-size: 0.813rem;
+       line-height: 1.438rem;
+       letter-spacing: 0.021rem;
+       margin: 0;
+       padding-left: 2.063rem;
+       padding-right: 0.796rem;
+     
+    }
+    
+    .ceo-bio{
+        gap: 0.5rem;
+        padding-bottom: 1.625rem;
+    }
+    
+    .ceo-image{
+        width: 2rem;
+        margin-left: 2.063rem;
+        margin-top: 1rem;
+    }
+    
+    .ceo-bio p{
+        font-size: 0.688rem;
+        line-height: 0.936rem;
+        letter-spacing: 0.034rem;
+        margin: 0;
+        margin-top: 1.125rem;
+    }
+    
+    .ceo-bio p span{
+        font-size: 0.5rem;
+    }
+
+    /*second-section*/
+
+    .second-section{
+        display: flex;
+    }
+
+    .second-section h2{
+        text-align: left;
+        padding: 6.25rem 0 0 5rem;
+        font-size: 2rem;
+    }
+    
+    .ss-p {
+        text-align: left;
+        padding: 1rem 18rem 0 5rem;
+        margin: 1.063rem 0  5.313rem 0;
+    }
+
+   
+    .second-section  input[type=email]{
+        width: 30rem;
+        height: 3rem;
+        margin: 7rem 5rem 1rem 0;
+       }
+
+     .second-section  input[type=email]::placeholder{
+       font-size: 0.75rem;
+   }
+       
+    .second-section  .start-btn{
+        width: 12.5rem;
+        height: 3rem;
+        font-size: 0.875rem;
+        margin: 0 0 5.313rem -22.5rem;
+    }
+
+    /*footer*/
+    
+    footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    
+    }
+
+    footer>*{
+        margin: 0;
+    }
+
+    .col-1{
+        margin: 5.813rem 0 9.938rem 5rem;
+    }
+    
+    .footer-logo{
+      width: 8.438rem;
+      margin: 0 0 2.25rem 0;
+    }
+    
+    .email{
+      margin-bottom: 0;
+    }
+    
+    .col-2{
+        margin: 9.625rem 0 0 12.5rem;
+    }
+    
+    .col-3{
+        margin: 9.625rem 0 0 12.5rem;
+    }
+    
+    .socl-icons{
+        gap: 0.7093rem;
+        padding-bottom: 0;
+        margin-top: 10.8rem;
+        max-height: 0;
+    }
+
+    .fa-brands{
+      padding: 0.438rem 0.438rem  1.375rem;
+    }
+    
+    .facebook{
+        padding: 0.438rem 0.625rem 1.375rem;
+    }
+    
+}
